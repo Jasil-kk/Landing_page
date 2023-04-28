@@ -30,7 +30,7 @@ body {
   padding: 50px 40px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px;
+  box-shadow: 0px 0px 10px var(--home-text);
   background-color: white;
   display: flex;
   justify-content: center;
@@ -64,10 +64,20 @@ body {
   color: white;
   cursor: pointer;
   font-family: "Lato", sans-serif;
+  border: none;
 }
 .auth-component input[type="submit"]:hover {
-  background-color: #65873b;
+  background-color: #344e15;
 }
+.auth-component p {
+  font-size: 18px;
+  color: var(--main-text);
+}
+.auth-component p a {
+  font-size: 18px;
+  color: var(--home-text);
+}
+
 /* header_section */
 
 header {
