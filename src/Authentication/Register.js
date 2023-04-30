@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { BaseUrl } from "../AxiosApi";
 
 const Register = () => {
   const [data, setData] = useState({});
+  const navigate = useNavigate();
 
   const handleDetails = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -13,8 +15,9 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("url").then((response) => {
+    axios.post(`${BaseUrl}/account/register/`,data).then((response) => {
       console.log(response);
+      navigate("/")
     });
   };
 
@@ -31,7 +34,7 @@ const Register = () => {
           <input name="password" onChange={handleDetails} type="password" />
           <label>Confirm Password</label>
           <input
-            name="confirmPassword"
+            name="comfirm_password"
             onChange={handleDetails}
             type="password"
           />
