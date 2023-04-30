@@ -17,7 +17,7 @@ const Register = () => {
     e.preventDefault();
     axios.post(`${BaseUrl}/account/register/`,data).then((response) => {
       console.log(response);
-      navigate("/")
+      navigate("/login")
     });
   };
 
@@ -41,7 +41,7 @@ const Register = () => {
           <input type="submit" value="SIGN UP" />
         </form>
         <p>
-          Already a user ? <Link to="/">Login</Link>
+          Already a user ? <Link to="/login">Login</Link>
         </p>
       </div>
     </div>
