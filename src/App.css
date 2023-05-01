@@ -65,6 +65,7 @@ body {
   cursor: pointer;
   font-family: "Lato", sans-serif;
   border: none;
+  text-transform: uppercase;
 }
 .auth-component input[type="submit"]:hover {
   background-color: #344e15;
@@ -76,6 +77,13 @@ body {
 .auth-component p a {
   font-size: 18px;
   color: var(--home-text);
+}
+.forgotLink {
+  text-align: end;
+  margin-bottom: 20px;
+}
+.forgotLink a{
+  text-decoration: none;
 }
 
 /* header_section */

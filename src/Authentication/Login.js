@@ -26,6 +26,7 @@ const handleSubmit = (e) =>{
           <input type="text" onChange={(e)=> setData({...data,username: e.target.value})} id="username" autoComplete="off" /> <br />
           <label >Password</label>
           <input type="password" onChange={(e)=> setData({...data,password: e.target.value})} id="password" /> <br />
+          <p className="forgotLink"><Link to="/forgot">forgot password ?</Link></p>
           <input type="submit" value="LOGIN" />
         </form>
         <p>

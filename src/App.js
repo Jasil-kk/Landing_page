@@ -3,6 +3,8 @@ import Login from './Authentication/Login';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Register from './Authentication/Register';
 import Pages from './Pages';
+import ForgotPassword from './Authentication/ForgotPassword';
+import ResetPassword from './Authentication/ResetPassword';
 
 
 function App() {
@@ -12,7 +14,9 @@ function App() {
       <Routes>
         <Route path='/' element={ <Register/>} />
         <Route path='/login' element={<Login/>}/>
-        <Route path='/pages' element={<Pages/>}/>
+        <Route path='/forgot' element={<ForgotPassword/>}/>
+        <Route path='/reset' element={<ResetPassword/>}/>
+         <Route path='/pages' element={<Pages/>}/>
       </Routes>
     </Router>
     </div>
