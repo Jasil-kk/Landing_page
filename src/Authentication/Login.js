@@ -6,7 +6,6 @@ import { BaseUrl } from "../AxiosApi";
 const Login = () => {
     const [data, setData] = useState({});
     const navigate = useNavigate();
-    console.log(data);
 
 const handleSubmit = (e) =>{
   e.preventDefault();
@@ -30,7 +29,7 @@ const handleSubmit = (e) =>{
           <input type="submit" value="LOGIN" />
         </form>
         <p>
-          Need an account ? <Link to="/register">Sign up</Link>
+          Need an account ? <Link to="/">Sign up</Link>
         </p>
       </div>
     </div>

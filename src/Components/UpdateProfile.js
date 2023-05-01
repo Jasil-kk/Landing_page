@@ -17,7 +17,6 @@ const UpdateProfile = ({ config, userDetails, setIsOpen }) => {
 
 
   return (
-    <>
     <div className="updateProfile-main">
       <div className="updateProfile-section">
         <form action="" onSubmit={handleUpdate}>
@@ -36,9 +35,8 @@ const UpdateProfile = ({ config, userDetails, setIsOpen }) => {
           <input type="submit" value="Update" />
         </form>
       </div>
+     <div onClick={() => setIsOpen(false)} className="background"></div> 
     </div>
-    <div onClick={() => setIsOpen(false)} className="background"></div>
-    </>
   );
 };
 

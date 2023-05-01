@@ -181,7 +181,6 @@ header {
   height: 100vh;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.439);
   display: grid;
   place-items: center;
   z-index: 5;
@@ -189,7 +188,8 @@ header {
 .background {
   position: fixed;
   inset: 0;
-  z-index: 4;
+  background: rgba(0, 0, 0, 0.439);
+  /* z-index: 4; */
 }
 .updateProfile-section {
   width: 450px;
@@ -225,6 +225,7 @@ header {
   border: none;
   transition: all 0.5s ease-in-out;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .updateProfile-section input[type="submit"]:hover {
   background: #304613;

@@ -36,13 +36,10 @@ const Header = () => {
       console.log(response.data);
       setDetails(response?.data);
     });
-  }, []);
+  },[details]);
   const handleLogout = () => {
-    // axios.get(`${BaseUrl}`, config).then((response) => {
-      // console.log(response);
       localStorage.removeItem("token")
-      navigate("/")
-    // });
+      navigate("/login")
   }
   const handleDelete = (id) => {
     axios.delete(`${BaseUrl}/account/details/${id}/`, config).then((response) => {
